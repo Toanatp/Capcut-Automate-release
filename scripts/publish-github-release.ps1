@@ -86,7 +86,7 @@ function Upload-Asset {
         [string]$ContentType
     )
     $name = [System.IO.Path]::GetFileName($Path)
-    $uri = "$uploadBase?name=$([System.Uri]::EscapeDataString($name))"
+    $uri = "${uploadBase}?name=$([System.Uri]::EscapeDataString($name))"
     Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -InFile $Path -ContentType $ContentType | Out-Null
 }
 
