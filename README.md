@@ -9,6 +9,11 @@ It is scaffolded to match the updater contract currently used by `C:\Tool_All\Ca
 - package asset: `*.zip`
 - digest asset: `*.sha256`
 
+Important:
+
+- If the desktop app should update without GitHub credentials, this release repo must be `public`.
+- A `private` GitHub release repo will make the desktop updater fail because the app checks GitHub releases anonymously.
+
 ## Expected GitHub Release Assets
 
 For each published version, upload:
