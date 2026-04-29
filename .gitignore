@@ -1,0 +1,8 @@
+*.zip
+*.sha256
+*.sig
+dist/
+out/
+tmp/
+Thumbs.db
+.DS_Store
