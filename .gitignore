@@ -1,6 +1,7 @@
 *.zip
 *.sha256
 *.sig
+.secrets/
 dist/
 out/
 tmp/
